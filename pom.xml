@@ -4,7 +4,7 @@
     <groupId>org.eurekaclinical</groupId>
     <artifactId>user-common</artifactId>
     <packaging>jar</packaging>
-    <version>1-Alpha-11</version>
+    <version>1-Alpha-14</version>
     <name>Eureka! Clinical User Common</name>
     <description>Eureka! Clinical User Common is a library of shared functionality for the
 	other modules of the Eureka! Clinical User project.

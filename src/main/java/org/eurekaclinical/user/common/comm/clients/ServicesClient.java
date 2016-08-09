@@ -90,10 +90,10 @@ public class ServicesClient extends UserClient {
 		doPostCreate(path, inRequest);
 	}     
         
-	/*public void verifyUser(String inCode) throws ClientException {
+	public void verifyUser(String inCode) throws ClientException {
 		final String path = "/api/userrequests/verify/" + inCode;
 		doPut(path);
-	} */
+	} 
         
 	public List<Role> getRoles() throws ClientException {
 		final String path = "/api/protected/roles";
