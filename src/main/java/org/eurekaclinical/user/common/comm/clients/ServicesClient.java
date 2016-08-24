@@ -43,17 +43,17 @@ public class ServicesClient extends UserClient {
 	private static final GenericType<List<Role>> RoleList = new GenericType<List<Role>>() {
 	};   
        
-	private final String userServicesUrl;
+	private final String userServiceUrl;
 
-	public ServicesClient(String inUserServicesUrl) {
+	public ServicesClient(String inUserServiceUrl) {
 		super();
-		LOGGER.debug("Using userServices URL {}", inUserServicesUrl);
-		this.userServicesUrl = inUserServicesUrl;
+		LOGGER.debug("Using userService URL {}", inUserServiceUrl);
+		this.userServiceUrl = inUserServiceUrl;
 	}
 
 	@Override
 	protected String getResourceUrl() {
-		return this.userServicesUrl;
+		return this.userServiceUrl;
 	}
 
 	public List<User> getUsers() throws ClientException {
