@@ -2,7 +2,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.eurekaclinical</groupId>
-    <artifactId>user-common</artifactId>
+    <artifactId>eurekaclinical-user-common</artifactId>
     <packaging>jar</packaging>
     <version>1.0-Alpha-2</version>
     <name>Eureka! Clinical User Common</name>
@@ -32,7 +32,7 @@
     </scm>  
 
     <build>
-        <finalName>user-common</finalName>
+        <finalName>eurekaclinical-user-common</finalName>
         <plugins>  
                 <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
