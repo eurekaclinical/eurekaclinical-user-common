@@ -19,10 +19,10 @@
  */
 package org.eurekaclinical.user.common.entity;
 
-import org.eurekaclinical.eureka.client.comm.LdapUser;
-import org.eurekaclinical.eureka.client.comm.LocalUser;
-import org.eurekaclinical.eureka.client.comm.OAuthUser;
-import org.eurekaclinical.eureka.client.comm.User;
+import org.eurekaclinical.user.client.comm.LdapUser;
+import org.eurekaclinical.user.client.comm.LocalUser;
+import org.eurekaclinical.user.client.comm.OAuthUser;
+import org.eurekaclinical.user.client.comm.User;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;

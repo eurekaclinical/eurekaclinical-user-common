@@ -20,14 +20,15 @@
 package org.eurekaclinical.user.common.entity;
 
 import java.util.Date;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 /**
  *
  * @author miaoai

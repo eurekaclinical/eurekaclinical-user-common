@@ -19,19 +19,25 @@
  */
 package org.eurekaclinical.user.common.test;
 
-import org.eurekaclinical.eureka.client.comm.authentication.AuthenticationMethod;
-import org.eurekaclinical.user.common.authentication.UserPrincipalAttributes;
+
+
 import java.security.Principal;
+
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletRequestWrapper;
+
 import org.jasig.cas.client.authentication.AttributePrincipal;
 
+import org.eurekaclinical.user.client.comm.authentication.AuthenticationMethod;
+
+import org.eurekaclinical.user.common.authentication.UserPrincipalAttributes;
 /**
  *
- * @author Andrew Post
+ * @author miaoai
  */
 public class UserRoleRequestWrapper extends HttpServletRequestWrapper {
 

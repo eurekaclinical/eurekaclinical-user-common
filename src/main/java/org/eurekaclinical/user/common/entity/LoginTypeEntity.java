@@ -19,7 +19,6 @@
  */
 package org.eurekaclinical.user.common.entity;
 
-import org.eurekaclinical.eureka.client.comm.authentication.LoginType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
@@ -29,8 +28,10 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
+
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
+import org.eurekaclinical.user.client.comm.authentication.LoginType;
 /**
  *
  * @author miaoai
@@ -82,8 +83,8 @@ public class LoginTypeEntity {
 		return ToStringBuilder.reflectionToString(this);
 	}
 	
-	public org.eurekaclinical.eureka.client.comm.LoginType toLoginType() {
-		org.eurekaclinical.eureka.client.comm.LoginType loginType = new org.eurekaclinical.eureka.client.comm.LoginType();
+	public org.eurekaclinical.user.client.comm.LoginType toLoginType() {
+		org.eurekaclinical.user.client.comm.LoginType loginType = new org.eurekaclinical.user.client.comm.LoginType();
 		loginType.setDescription(this.description);
 		loginType.setName(this.name);
 		loginType.setId(this.id);

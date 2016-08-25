@@ -19,8 +19,8 @@
  */
 package org.eurekaclinical.user.common.authentication;
 
-import org.eurekaclinical.eureka.client.comm.User;
-import org.eurekaclinical.eureka.client.comm.UserRequest;
+import org.eurekaclinical.user.client.comm.User;
+import org.eurekaclinical.user.client.comm.UserRequest;
 import org.eurekaclinical.user.common.entity.UserEntity;
 import java.util.Map;
 import javax.servlet.http.HttpServletRequest;

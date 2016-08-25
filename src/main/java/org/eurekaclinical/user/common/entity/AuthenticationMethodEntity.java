@@ -19,7 +19,7 @@
  */
 package org.eurekaclinical.user.common.entity;
 
-import org.eurekaclinical.eureka.client.comm.authentication.AuthenticationMethod;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
@@ -29,8 +29,10 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
+
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
+import org.eurekaclinical.user.client.comm.authentication.AuthenticationMethod;
 /**
  *
  * @author miaoai
@@ -82,8 +84,8 @@ public class AuthenticationMethodEntity {
 		return ToStringBuilder.reflectionToString(this);
 	}
 	
-	public org.eurekaclinical.eureka.client.comm.AuthenticationMethod toAuthenticationMethod() {
-		org.eurekaclinical.eureka.client.comm.AuthenticationMethod authenticationMethod = new org.eurekaclinical.eureka.client.comm.AuthenticationMethod();
+	public org.eurekaclinical.user.client.comm.AuthenticationMethod toAuthenticationMethod() {
+		org.eurekaclinical.user.client.comm.AuthenticationMethod authenticationMethod = new org.eurekaclinical.user.client.comm.AuthenticationMethod();
 		authenticationMethod.setId(this.id);
 		authenticationMethod.setName(this.name);
 		authenticationMethod.setDescription(this.description);

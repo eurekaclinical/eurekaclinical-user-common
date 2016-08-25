@@ -36,8 +36,6 @@ import com.sun.jersey.test.framework.JerseyTest;
 import com.sun.jersey.test.framework.WebAppDescriptor;
 import com.sun.jersey.test.framework.WebAppDescriptor.Builder;
 
-import org.eurekaclinical.user.common.json.ObjectMapperProvider;
-
 /**
  * Base class for all the Jersey resource related test classes.
  *
@@ -73,8 +71,6 @@ public abstract class AbstractResourceTest extends JerseyTest {
 		ClientConfig clientConfig = new DefaultClientConfig();
 		clientConfig.getFeatures().put(JSONConfiguration.FEATURE_POJO_MAPPING,
 				Boolean.TRUE);
-		clientConfig.getClasses().add(ObjectMapperProvider.class);
-		;
 
 		Builder builder = (new WebAppDescriptor.Builder())
 				.contextListenerClass(getListener())

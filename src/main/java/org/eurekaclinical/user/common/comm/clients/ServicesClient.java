@@ -19,14 +19,15 @@
  */
 package org.eurekaclinical.user.common.comm.clients;
 
+import org.eurekaclinical.user.client.EurekaclinicalUserClient;
 import com.sun.jersey.api.client.GenericType;
 import java.util.List;
 import javax.ws.rs.core.UriBuilder;
 import org.eurekaclinical.common.comm.Role;
 import org.eurekaclinical.common.comm.clients.ClientException;
-import org.eurekaclinical.eureka.client.comm.PasswordChangeRequest;
-import org.eurekaclinical.eureka.client.comm.User;
-import org.eurekaclinical.eureka.client.comm.UserRequest;
+import org.eurekaclinical.user.client.comm.PasswordChangeRequest;
+import org.eurekaclinical.user.client.comm.User;
+import org.eurekaclinical.user.client.comm.UserRequest;
 import org.eurekaclinical.user.common.entity.OAuthProvider;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -35,7 +36,7 @@ import org.slf4j.LoggerFactory;
  *
  * @author miaoai
  */
-public class ServicesClient extends UserClient {
+public class ServicesClient extends EurekaclinicalUserClient {
 	private static final Logger LOGGER = LoggerFactory.getLogger(ServicesClient.class);    
     
 	private static final GenericType<List<User>> UserList = new GenericType<List<User>>() {
@@ -47,7 +48,7 @@ public class ServicesClient extends UserClient {
 
 	public ServicesClient(String inUserServiceUrl) {
 		super();
-		LOGGER.debug("Using userService URL {}", inUserServiceUrl);
+		LOGGER.debug("Using eurekaclinical user service URL {}", inUserServiceUrl);
 		this.userServiceUrl = inUserServiceUrl;
 	}
 
