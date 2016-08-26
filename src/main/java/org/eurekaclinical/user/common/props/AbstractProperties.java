@@ -40,14 +40,14 @@ public abstract class AbstractProperties extends EurekaClinicalProperties {
 	 *
 	 * There are two potential sources of application configuration. The
 	 * fallback configuration should always be there. The default configuration
-	 * directory, <code>/etc/eureka</code>, may optionally have an
+	 * directory, <code>/etc/ec-user</code>, may optionally have an
 	 * application.properties file within it that overrides the fallback
 	 * configuration for each configuration property that is specified. The
 	 * <code>eureka.config.dir</code> system property allows specifying an
 	 * alternative configuration directory.
 	 */
 	public AbstractProperties() {
-		super("/etc/eureka");              
+		super("/etc/ec-user");              
 	}      
 	/**
         * Get the base URL for the application for external users. Always
