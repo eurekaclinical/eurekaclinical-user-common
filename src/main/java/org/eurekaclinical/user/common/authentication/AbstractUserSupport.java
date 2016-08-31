@@ -21,7 +21,6 @@ package org.eurekaclinical.user.common.authentication;
 
 import org.eurekaclinical.user.client.comm.User;
 import org.eurekaclinical.user.client.comm.UserRequest;
-import org.eurekaclinical.user.common.entity.UserEntity;
 import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 import org.jasig.cas.client.authentication.AttributePrincipal;
@@ -53,11 +52,6 @@ public abstract class AbstractUserSupport implements UserSupport {
 	
 	@Override
 	public boolean isSameUser(HttpServletRequest servletRequest, User user) {
-		return isSameUser(servletRequest, user.getUsername());
-	}
-	
-	@Override
-	public boolean isSameUser(HttpServletRequest servletRequest, UserEntity user) {
 		return isSameUser(servletRequest, user.getUsername());
 	}
 	

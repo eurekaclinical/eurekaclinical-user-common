@@ -21,7 +21,6 @@ package org.eurekaclinical.user.common.authentication;
 
 import org.eurekaclinical.user.client.comm.User;
 import org.eurekaclinical.user.client.comm.UserRequest;
-import org.eurekaclinical.user.common.entity.UserEntity;
 import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 import org.jasig.cas.client.authentication.AttributePrincipal;
@@ -39,8 +38,6 @@ public interface UserSupport {
 	boolean isSameUser(HttpServletRequest servletRequest, UserRequest userRequest);
 
 	boolean isSameUser(HttpServletRequest servletRequest, User user);
-
-	boolean isSameUser(HttpServletRequest servletRequest, UserEntity user);
 
 	boolean isSameUser(HttpServletRequest servletRequest, String username);
     
