@@ -19,7 +19,7 @@
  */
 package org.eurekaclinical.user.common.props;
 
-import org.eurekaclinical.standardapis.props.EurekaClinicalProperties;
+import org.eurekaclinical.standardapis.props.CasEurekaClinicalProperties;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -28,7 +28,7 @@ import org.slf4j.LoggerFactory;
  *
  * @author miaoai
  */
-public abstract class AbstractProperties extends EurekaClinicalProperties {
+public abstract class AbstractProperties extends CasEurekaClinicalProperties {
 	/**
 	 * The class level logger.
 	 */
