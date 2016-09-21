@@ -16,20 +16,24 @@
         <artifactId>eurekaclinical-parent-standard-deps</artifactId>
         <version>1-Alpha-6</version>
     </parent>
-                  
-    <url>https://github.com/eurekaclinical/user-common</url>
     
+    <url>https://github.com/eurekaclinical/user-common</url>
     <properties>
         <maven.build.timestamp.format>yyyyMMddHHmmss</maven.build.timestamp.format>
         <eureka.build.timestamp>${maven.build.timestamp}</eureka.build.timestamp> 
     </properties>
 
     <scm>
-        <connection>scm:git:https://github.com/eurekaclinical/user-common.git</connection>
-        <developerConnection>scm:git:https://github.com/eurekaclinical/user-common.git</developerConnection>
-        <url>https://github.com/eurekaclinical/user-common.git</url>
+        <connection>scm:git:https://github.com/eurekaclinical/eurekaclinical-user-common.git</connection>
+        <developerConnection>scm:git:https://github.com/eurekaclinical/eurekaclinical-user-common.git</developerConnection>
+        <url>https://github.com/eurekaclinical/eurekaclinical-user-common.git</url>
         <tag>HEAD</tag>
     </scm>  
+
+    <issueManagement>
+        <system>GitHub</system>
+        <url>https://github.com/eurekaclinical/eurekaclinical-user-common/issues</url>
+    </issueManagement>
 
     <build>
         <finalName>eurekaclinical-user-common</finalName>
@@ -74,10 +78,6 @@
                 </resource>
         </resources>         
     </build>
-    <issueManagement>
-        <system>GitHub</system>
-        <url>https://github.com/eurekaclinical/user-common/issues</url>
-    </issueManagement>
                 
     <dependencies>
         <dependency>
