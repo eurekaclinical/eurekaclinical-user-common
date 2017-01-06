@@ -15,10 +15,8 @@
         <groupId>org.eurekaclinical</groupId>
         <artifactId>eurekaclinical-parent-standard-deps</artifactId>
         <version>1</version>
-    </parent>
-                  
+    </parent>   
     <url>https://github.com/eurekaclinical/eurekaclinical-user-common</url>
-    
     <properties>
         <maven.build.timestamp.format>yyyyMMddHHmmss</maven.build.timestamp.format>
         <eureka.build.timestamp>${maven.build.timestamp}</eureka.build.timestamp> 
@@ -30,6 +28,11 @@
         <url>https://github.com/eurekaclinical/eurekaclinical-user-common.git</url>
         <tag>HEAD</tag>
     </scm>  
+
+    <issueManagement>
+        <system>GitHub</system>
+        <url>https://github.com/eurekaclinical/eurekaclinical-user-common/issues</url>
+    </issueManagement>
 
     <build>
         <finalName>eurekaclinical-user-common</finalName>
@@ -74,10 +77,6 @@
                 </resource>
         </resources>         
     </build>
-    <issueManagement>
-        <system>GitHub</system>
-        <url>https://github.com/eurekaclinical/user-common/issues</url>
-    </issueManagement>
                 
     <dependencies>
         <dependency>
