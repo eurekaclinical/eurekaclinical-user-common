@@ -17,7 +17,7 @@
         <version>1</version>
     </parent>
                   
-    <url>https://github.com/eurekaclinical/user-common</url>
+    <url>https://github.com/eurekaclinical/eurekaclinical-user-common</url>
     
     <properties>
         <maven.build.timestamp.format>yyyyMMddHHmmss</maven.build.timestamp.format>
