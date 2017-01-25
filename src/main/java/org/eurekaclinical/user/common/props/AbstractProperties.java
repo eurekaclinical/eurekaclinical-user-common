@@ -21,19 +21,12 @@ package org.eurekaclinical.user.common.props;
 
 import org.eurekaclinical.standardapis.props.CasEurekaClinicalProperties;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 /**
  *
  * @author miaoai
  */
 public abstract class AbstractProperties extends CasEurekaClinicalProperties {
-	/**
-	 * The class level logger.
-	 */
-	private static final Logger LOGGER = LoggerFactory.getLogger(
-			AbstractProperties.class);
 
 	/**
 	 * Loads the application configuration.
@@ -48,19 +41,5 @@ public abstract class AbstractProperties extends CasEurekaClinicalProperties {
 	 */
 	public AbstractProperties() {
 		super("/etc/ec-user");              
-	}      
-	/**
-        * Get the base URL for the application for external users. Always
-        * ends with a slash ("/").
-        *
-        * @return The base URL.
-        */
-	public String getApplicationUrl() {
-		String result = this.getValue("user.webapp.url");
-		if (result.endsWith("/")) {
-			return result;
-		} else {
-			return result + "/";
-		}
-	}        
+	}       
 }
