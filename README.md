@@ -1,5 +1,5 @@
 # Shared code for the Eureka! Clinical User microservice
-Atlanta Clinical and Translational Science Institute (ACTSI), Emory University, Atlanta, GA
+[Atlanta Clinical and Translational Science Institute (ACTSI)](http://www.actsi.org), [Emory University](http://www.emory.edu), Atlanta, GA
 
 ## What does it do?
 It contains classes that are shared between `eurekaclinical-user-webapp` and `eurekaclinical-user-service`.
