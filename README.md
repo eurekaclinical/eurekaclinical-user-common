@@ -1,4 +1,5 @@
 # Shared code for the Eureka! Clinical User microservice
+Atlanta Clinical and Translational Science Institute, Emory University, Atlanta, GA
 
 ## Version 1.0 development series
 Latest release: [![Latest release](https://maven-badges.herokuapp.com/maven-central/org.eurekaclinical/eurekaclinical-user-common/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.eurekaclinical/eurekaclinical-user-common)
