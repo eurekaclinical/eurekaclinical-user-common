@@ -81,7 +81,7 @@ other modules of the Eureka! Clinical User project.
         <dependency>
             <groupId>org.eurekaclinical</groupId>
             <artifactId>eurekaclinical-user-client</artifactId>
-            <version>1.0-Alpha-10</version>
+            <version>1.0-Alpha-11</version>
         </dependency>                       
         <dependency>
             <groupId>javax.servlet</groupId>
