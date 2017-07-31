@@ -17,12 +17,14 @@
  * limitations under the License.
  * #L%
  */
-package org.eurekaclinical.user.common.authentication;
+package org.eurekaclinical.user.common.test;
+
 /**
  *
  * @author miaoai
  */
-public final class UserPrincipalAttributes {
-	public static final String AUTHENTICATION_METHOD = "authenticationMethod";
-	
+final class UserPrincipalAttributes {
+
+    static final String AUTHENTICATION_METHOD = "authenticationMethod";
+
 }

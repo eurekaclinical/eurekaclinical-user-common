@@ -19,7 +19,6 @@
  */
 package org.eurekaclinical.user.common.test;
 
-
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 import com.google.inject.Module;
@@ -31,47 +30,45 @@ import org.junit.Before;
  */
 public abstract class AbstractTest {
 
-	/**
-	 * Guice injector to be used to fetch an instance of the persistence
-	 * service, and the test data setup class.
-	 */
-	private Injector injector;
+    /**
+     * Guice injector to be used to fetch an instance of the persistence
+     * service, and the test data setup class.
+     */
+    private Injector injector;
 
-	/**
-	 * Creates sets up the Guice injector using the {@link #getModules()}
-	 * method.
-	 */
-	public AbstractTest() {
-		super();
-	}
+    /**
+     * Creates sets up the Guice injector using the {@link #getModules()}
+     * method.
+     */
+    public AbstractTest() {
+        super();
+    }
 
-	/**
-	 * Returns an instance of the given class, using the Guice Injector.
-	 *
-	 * @param <T> The class from which to create the instance.
-	 * @param className The name of the class.
-	 * @return An instance of the named class.
-	 */
-	protected final <T> T getInstance(Class<T> className) {
-		return injector.getInstance(className);
-	}
+    /**
+     * Returns an instance of the given class, using the Guice Injector.
+     *
+     * @param <T> The class from which to create the instance.
+     * @param className The name of the class.
+     * @return An instance of the named class.
+     */
+    protected final <T> T getInstance(Class<T> className) {
+        return injector.getInstance(className);
+    }
 
-		
+    /**
+     * Returns the Guice modules used to set up the Injector for the test.
+     *
+     * @return The Guice modules used to configure the Injector.
+     */
+    protected abstract Module[] getModules();
 
-	/**
-	 * Returns the Guice modules used to set up the Injector for the test.
-	 *
-	 * @return The Guice modules used to configure the Injector.
-	 */
-	protected abstract Module[] getModules();
-
-	/**
-	 * Runs before each test is executed. Sets up Guice.
-	 */
-	@Before
-	public void beforeAbstractTest() {
-		if (injector == null) {
-			injector = Guice.createInjector(this.getModules());
-		}
-	}
+    /**
+     * Runs before each test is executed. Sets up Guice.
+     */
+    @Before
+    public void beforeAbstractTest() {
+        if (injector == null) {
+            injector = Guice.createInjector(this.getModules());
+        }
+    }
 }

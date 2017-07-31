@@ -19,8 +19,6 @@
  */
 package org.eurekaclinical.user.common.test;
 
-
-
 import java.security.Principal;
 
 import java.util.Collections;
@@ -34,44 +32,43 @@ import org.jasig.cas.client.authentication.AttributePrincipal;
 
 import org.eurekaclinical.user.client.comm.authentication.AuthenticationMethod;
 
-import org.eurekaclinical.user.common.authentication.UserPrincipalAttributes;
 /**
  *
  * @author miaoai
  */
 public class UserRoleRequestWrapper extends HttpServletRequestWrapper {
 
-	public UserRoleRequestWrapper(HttpServletRequest req) {
-		super(req);
-	}
+    public UserRoleRequestWrapper(HttpServletRequest req) {
+        super(req);
+    }
 
-	@Override
-	public boolean isUserInRole(String role) {
-		return true;
-	}
+    @Override
+    public boolean isUserInRole(String role) {
+        return true;
+    }
 
-	@Override
-	public Principal getUserPrincipal() {
-		return new AttributePrincipal() {
-			@Override
-			public String getName() {
-				return "user@emory.edu";
-			}
+    @Override
+    public Principal getUserPrincipal() {
+        return new AttributePrincipal() {
+            @Override
+            public String getName() {
+                return "user@emory.edu";
+            }
 
-			@Override
-			public String getProxyTicketFor(String string) {
-				throw new UnsupportedOperationException("Not supported yet.");
-			}
+            @Override
+            public String getProxyTicketFor(String string) {
+                throw new UnsupportedOperationException("Not supported yet.");
+            }
 
-			@Override
-			public Map<String, Object> getAttributes() {
-				Map<String, Object> attrs = new HashMap<>();
-				attrs.put(
-						UserPrincipalAttributes.AUTHENTICATION_METHOD, 
-						AuthenticationMethod.LOCAL.name());
-				return Collections.unmodifiableMap(attrs);
-			}
-		};
-	}
-    
+            @Override
+            public Map<String, Object> getAttributes() {
+                Map<String, Object> attrs = new HashMap<>();
+                attrs.put(
+                        UserPrincipalAttributes.AUTHENTICATION_METHOD,
+                        AuthenticationMethod.LOCAL.name());
+                return Collections.unmodifiableMap(attrs);
+            }
+        };
+    }
+
 }
