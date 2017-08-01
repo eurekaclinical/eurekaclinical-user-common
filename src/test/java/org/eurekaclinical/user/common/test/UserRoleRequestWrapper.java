@@ -21,7 +21,6 @@ package org.eurekaclinical.user.common.test;
 
 import java.security.Principal;
 
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -29,8 +28,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletRequestWrapper;
 
 import org.jasig.cas.client.authentication.AttributePrincipal;
-
-import org.eurekaclinical.user.client.comm.authentication.AuthenticationMethod;
 
 /**
  *
@@ -50,9 +47,11 @@ public class UserRoleRequestWrapper extends HttpServletRequestWrapper {
     @Override
     public Principal getUserPrincipal() {
         return new AttributePrincipal() {
+            private static final long serialVersionUID = 1L;
+            
             @Override
             public String getName() {
-                return "user@emory.edu";
+                return "testuser";
             }
 
             @Override
@@ -62,11 +61,7 @@ public class UserRoleRequestWrapper extends HttpServletRequestWrapper {
 
             @Override
             public Map<String, Object> getAttributes() {
-                Map<String, Object> attrs = new HashMap<>();
-                attrs.put(
-                        UserPrincipalAttributes.AUTHENTICATION_METHOD,
-                        AuthenticationMethod.LOCAL.name());
-                return Collections.unmodifiableMap(attrs);
+                return new HashMap<>();
             }
         };
     }
