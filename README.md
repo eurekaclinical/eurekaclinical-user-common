@@ -6,6 +6,9 @@ It contains classes that are shared between `eurekaclinical-user-webapp` and `eu
 
 Latest release: [![Latest release](https://maven-badges.herokuapp.com/maven-central/org.eurekaclinical/eurekaclinical-user-common/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.eurekaclinical/eurekaclinical-user-common)
 
+## Version 1.2
+Dependency updates.
+
 ## Version 1.1
 Dependency updates.
 
